@@ -1,0 +1,121 @@
+<!-- validator.w3.org is tool to check any error int he code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>searching </title>
+</head>
+<body>
+    <!-- forms are tags that is used to take input from user -->
+    <!-- label tell us about input feild -->
+     <!-- br tag is used to break the line of content -->
+       <!-- autocaptalize="words"> this is used to captalize all the words first letter in data base  -->
+     <form>
+         <label for="name">
+            Name:
+            <input 
+            type="text" 
+            required 
+            autocomplete="on"
+            autocaptalize="Name"
+            maxlength="20"
+            minlength="10"
+            spellcheck="true">
+            <button type="submit"> save </button> 
+        </label> <br>
+
+        <label for="email">
+            email:
+            <input type="email">
+            <button type="submit">save</button>
+        </label><br>
+
+        <label for=" tell us your query">
+            tell us your query:
+<!-- text area for large space -->
+            <textarea rows="4" cols="30"></textarea>
+        </label>
+        <button type="submit">save</button>
+
+        
+<!-- radios use to select only one option -->
+ <!-- value attribute is used to send the selected input to the databse is it is not mentioned value in the database will remain empty -->
+         <p>Gender</p>
+          <label for="radio1">
+          Male:
+          <input 
+          type="radio" 
+          id="radio1"
+          name="Gender"
+          value="male">
+          </label>
+          
+          <label for="radio2">
+          Female:
+          <input 
+          type="radio" 
+           id="radio2"
+          name="Gender"
+          value="female">
+          </label> <br>
+     </form>
+
+
+     <!-- checkbox is used to get multiple options from a user -->
+     <form>
+         <p>SUBJECTS</p>
+          <label for="science">
+          science:
+          <input type="checkbox" 
+          value="science">
+          </label> <br>
+          
+          <label for="arts">
+           arts:
+          <input type="checkbox" 
+          value="arts">
+          </label> <br>
+
+          <label for="business">
+           business:
+          <input type="checkbox"
+          value="business">
+          </label> <br>
+
+     </form>
+
+<!--dropdown  -->
+        <select>
+                <option value="" hidden>select an option</option>
+                <option value="lahore">lahore</option>
+                <option value="multan">multan</option>
+                <option value="faislabad">faisalabad</option>
+                <option value="karachi">karachi</option>
+                <option value="peshawar">peshawar</option>
+        </select>
+
+<!-- styling paragraph with blue -->
+ <p style="color: blue; font-size: 30px;">welcome to css</p>
+ <h2 style="text-decoration: underline red dashed; text-align:center">Inline CSS</h2>
+
+
+
+
+
+
+<!-- making the own searching point -->
+     <form action="https://www.google.com/search?q=youtube" target="blank" method="get">
+          <input autofocus name="q" placeholder="query" type="search">
+          <input type="submit" value="youtube search">
+     </form>
+
+
+
+     <!-- register using regular expressions -->
+      <form>
+            <input name="email" pattern=".+@.+\.edu"  placeholder="email" type="text">
+            <button>register</button>
+
+
+      </form>
+</body>
+</html>
