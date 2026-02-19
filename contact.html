@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+</head>
+<body>
+    <h1<Conatct Forms</h1>
+        <!-- Forms -->
+         <form>
+            <label>
+                Name:
+                <input type="text" 
+                required minlength="5"
+                 maxlength="20" 
+                 placeholder="Enter your name">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email"
+                required 
+                placeholder="Enter your email">
+            </label>
+            <br>
+            <label>
+                Password:
+                <label>
+                    <input type="password"
+                    required
+                    minlength="8">
+                </label>
+                <br>
+                <!-- radios -->
+                 <p>Gender</p>
+             <label>
+                Male:
+                <input type="radio" name="gender">
+             </label>   
+            <label>
+                Female:
+                <input type="radio" name="gender">
+            </label>
+            <br>
+            <!-- checkboxes -->
+               <p>Subjects</p>
+             <label>
+                HTML:
+                <input type="checkbox">
+             </label>
+             <label>
+                css:
+                <input type="checkbox">
+             </label>
+             <label>
+                javascript:
+                <input type="checkbox">
+             </label>
+              <br>
+             <!-- selection -->
+                <label>
+                    select city:
+                    <select>
+                        <option hidden>Select City</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="multan">Multan</option>
+                </label>
+                <br>
+                <label>
+                    Your message:
+                    <textarea rows="4" cols="30"></textarea>
+                </label>
+            <br></br>
+            
+            <button type ="submit">Send</button>
+         </form>
+</body>
+</html>
