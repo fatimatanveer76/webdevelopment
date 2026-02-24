@@ -7,13 +7,156 @@
     <title>Document</title>
  </head>
  <body>
-    <p>this is a paragraph</p>
+    <p style="text-align: center;">this is a paragraph</p>
     <!-- mdnwebdocs -->
      <!-- layout structure(semantic elements) -->
       <!-- <header> titles,logos , menues,nav </header> -->
        <!-- section tags class ="abiut"  -->
         <!-- <section class="service"></section> -->
          <!-- <footer> is the last section :copyright, -->
-    
+         <!-- inline cannot set height and width -->
+          <!-- inle block:can set height and width -->
+         <style>
+            h1{
+                color: red;
+            }
+            header{
+                background-color: lightblue;
+                /* padding: 20px; */
+                text-align:center;
+            }
+             a{
+               display: inline-block;
+                /* margin-right: 20px; */
+                /* text-decoration: none; */
+                color: black;
+            }
+            .hero{
+                background-color: lightgray;
+                /* padding: 20px; */
+            }
+            .hero h1{
+               margin: 0;
+               margin: 0px 10px ;
+            }
+            header nav a{
+                margin-right: 20px;
+            }
+            .service{
+                background-color: lightgreen;
+                padding:10px
+               
+            }
+            .about{
+                background-color: lightyellow;
+            }
+             footer{
+                background-color: lightcoral;
+                padding: 20px;
+                text-align: center;
+             }
+             /* footer h1,footer p{
+                  font-size: 14px;
+                  color: white;
+                  text-align: center;
+         } */
+          .copyright {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            }
+            .table{
+                background-color: lightcyan;
+            }
+            /* form */
+            form{
+                  
+                  padding: 3px;
+            }
+            form button{
+                  background-color: lightblue;
+                  color: black;
+                  border: none;
+                  padding: 10px 20px;
+                  cursor: pointer;
+            }
+         </style>
+         
+
+
+            <!-- layout structure using semantic elements -->
+          <header>
+            <h1>this is our website</h1>
+            <!-- nav menue -->
+            <nav >
+               <a href="index.html" target="blank">home  </a>
+               <a href="about.html">about  </a>
+               <a href="service.html">service  </a>
+            </nav>
+          </header>   
+          <main>
+            <section class="hero">
+                <h2>welcome to our website</h2>
+                <p>we are a software company</p>
+            </section>
+             <section class="service">
+                <h2>our services</h2>
+                <ul>
+                    <li>web design</li>
+                    <li>web development</li>
+                    <li>mobile app development</li>
+                </ul>
+            </section>
+             <section class="about">
+                <h2>about us</h2>
+                <p>we are a team of developers who are passionate about creating beautiful and functional websites.</p>
+               </section>
+
+               <section class = "table">
+                  <h2>our team</h2>
+                  <table border="1">
+                     <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Position</th>
+                           <th>Email</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>John Doe</td>
+                           <td>CEO</td>
+                           <td>fateema<span style="color:saddlebrown">@example.com</span></td>
+                        </tr>
+                       <tfoot>
+                        <tr>
+                           <td>Jane Doe</td>
+                           <td>CTO</td>
+                           <td>erum<span style="color:blue">@example.com</span></td>
+                        </tr>
+                        <tr>
+                           <td>Bob Smith</td>
+                           <td>Developer</td>
+                           <td>hafsa<span style="color:purple">@example.com</span></td>
+                        </tr>
+                       </tfoot> 
+                     </tbody>
+                  </table>
+
+             <footer>
+            
+                  <div class="copyright">
+                     <p>copyright 2024 .All the rights are reserved</p>
+                  </div>
+           
+             </footer>
+          </main>
+          <form>
+             name: <br>
+      <input type="text" name="name">
+      <label>
+      <button type="submit">Submit</button>
+      </label>
+          </form>
  </body>
  </html>
