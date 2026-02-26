@@ -1,0 +1,185 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* unversal selector */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     
+     }
+
+ .box{
+    color:black;
+    /* width: 100px;
+    height: 100px; */
+    background-color: brown;
+    margin: 50px;
+    padding: 40px;
+    display: inline-block;
+    border: solid 1px black;
+  }
+ .text-box h2{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    border: solid 1px black;
+ }
+    .image-with-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+  </style>  
+<body>
+ 
+
+
+
+
+
+
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="text-box">
+        <h2>My First Web Page</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Vol
+        </p>
+    </div>
+
+
+
+<section class="image-with-text">
+    <div class="text">
+        <h1>image with text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas</p>
+    </div>
+
+    <div class="img">
+        <h1>Image </h1>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/041/880/991/small/ai-generated-pic-artistic-depiction-of-sunflowers-under-a-vast-cloudy-sky-photo.jpg" alt="image" width="300px" height="200px">
+    </div>
+    </section>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline-block | Float</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* id selector */
+        #box1{
+            background-color: lightcoral;
+        }
+        #box2{
+            background-color: lightblue;
+        }
+        #box3{
+            background-color: lightgreen;
+        }
+        /* class selector */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 5px; 
+          box-sizing: border-box;
+            display: inline-block;
+        }
+         .text{
+            width:30%;
+            background-color: lightblue;
+            color:blueviolet;
+            display:inline-block;
+             min-height: 30%;
+         } 
+         .img{
+            max-height: 30%;
+            width: 30%;
+            display:inline-block;
+         } 
+          .img img{
+            width: 100%;
+            display: inline;
+        }
+ 
+        .text-box{
+            background-color: chocolate;
+            padding: 10px;
+            margin:10px
+        }
+        .text-box h2{
+            margin-bottom: 10px;
+            margin-top:10px;
+        }
+        .text-box p{
+            margin-bottom: 10px;
+        }
+
+        .img-with-text{
+            display:inline;
+        }
+        .text h1{
+            margin-bottom:10px;
+        }
+        .text p{
+            margin-bottom:10px;
+            max-width: 50%;
+        }
+       
+    </style>
+</head>
+<body>
+<!-- nav -->
+ <nav style="background-color:beige; color: purple; padding: 10px; text-align: center; margin: 10px;" >
+    <a href="https://www.tiktok.com/@hayder_ali08?is_from_webapp=1&sender_device=pc" target="blank">vist my account (follow ,share and like) </a>
+ </nav>
+
+    <!-- three divs -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+
+    <!-- box model: margin - border - padding - actual content -->
+    
+    <div class="text-box">
+        <h2>Welcome to Web development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ab hic nostrum voluptatibus deleniti delectus maxime maiores. Consectetur necessitatibus fugiat ullam, nihil id natus corporis possimus beatae modi magnam dolor.</p>
+        <button type="button">Click here</button>
+    </div>
+
+    <section class="img-with-text">
+        <div class="text">
+            <h1>Image with Text</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi porro, voluptates illum ut illo libero dolor corrupti fugiat nostrum totam dolores expedita vero tenetur saepe alias? Assumenda voluptate in tempora!</p>
+        </div>
+        <div class="img">
+            <img src="C:\Users\Elitebook\github_repo\webdevelopment\download.jpg" alt="image">
+        </div>
+        </section>
+
+</body>
+</html>
