@@ -1,0 +1,169 @@
+<!-- form -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+
+<style>
+
+/* Page background */
+body{
+    background:#3f6ff0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Box */
+.container{
+    background:white;
+    width:80%;
+    margin:50px auto;
+    padding:30px;
+    border-radius:10px;
+}
+
+/* All form rows */
+.form,.form1,.form2,.form3{
+    margin-bottom:20px;
+}
+
+/* Labels */
+.form label,.form1 label,.form2 label,.form3 label{
+    display:inline-block;
+    margin:8px;
+    width:30%;
+}
+
+/* Inputs & Select */
+input, select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+
+/* Headings */
+h1{
+    margin-bottom:10px;
+}
+
+h3{
+    margin-top:25px;
+}
+
+/* Button */
+button{
+    background:#3f6ff0;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Registration</h1>
+
+<h3>Personal Details</h3>
+
+<!-- div1 -->
+<div class="form">
+
+<label>
+Full Name<br>
+<input type="text" placeholder="Enter your name">
+</label>
+
+<label>
+Date of Birth<br>
+<input type="date">
+</label>
+
+<label>
+Email<br>
+<input type="email" placeholder="Enter your email">
+</label>
+
+</div>
+
+<!-- div2 -->
+<div class="form1">
+
+<label>
+Mobile Number<br>
+<input type="text" placeholder="Enter mobile number">
+</label>
+
+<label>
+Select Gender<br>
+<select>
+<option hidden>Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+</label>
+
+<label>
+Occupation<br>
+<input type="text" placeholder="Enter your occupation">
+</label>
+
+</div>
+
+<h3>Identity Details</h3>
+
+<!-- div3 -->
+<div class="form2">
+
+<label>
+ID Type<br>
+<input type="text" placeholder="Enter ID type">
+</label>
+
+<label>
+ID Number<br>
+<input type="text" placeholder="Enter ID number">
+</label>
+
+<label>
+Issued Authority<br>
+<input type="text" placeholder="Enter issued authority">
+</label>
+
+</div>
+
+<!-- div4 -->
+<div class="form3">
+
+<label>
+Issued State<br>
+<input type="text" placeholder="Enter issued state">
+</label>
+
+<label>
+Issued Date<br>
+<input type="date">
+</label>
+
+<label>
+Expiry Date<br>
+<input type="date">
+</label>
+
+</div>
+
+<button>Next ➜</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            border:none;
+            border: 2px solid blueviolet;
+            background-color: transparent;
+            border-radius:5px;
+            padding: 5px 7px;
+            /* transition: color 1s ease, border 2s; */
+            transition: 2s;
+            /* transition: 1s ease in; */
+        }
+        .btn:hover{
+               background-color: blueviolet;
+                border: 2px solid orangered;
+                color:white;
+        }
+        /* a{
+            transition: color 2s;
+        } */
+        a:link{
+            color:aqua;
+        }
+        a:visited{
+            color:cornflowerblue;
+        }
+        a:active{
+            color:darkgreen;
+        }
+        /* a:hover{
+             background-color: blueviolet;
+        } */
+
+         /* box shadow the size of shadow will same as box  */
+         .box{
+            color:grey;
+            padding:10px;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            /* horizontal , verticle ,blur , expand */
+            /* box-shadow: -5px 3px 5px 5px gray; */
+            margin-left:50px;
+            margin-top:50px;
+         }
+         .box:hover{
+           /* horizontal , verticle ,blur , expand */
+            box-shadow: -5px 3px 6px 7px gray;
+         }
+         /*  */
+         .input-field{
+            margin-right:10px;
+            padding: 10px;
+            border-radius: 5px;
+         }
+         .input-field:focus{
+            outline:none;
+            border: 2px solid rgb(21, 21, 195);
+            box-shadow: 0px 0px 5px 3px rgb(93, 93, 180);
+         }
+         .input-field:hover{
+            box-shadow: 0px 0px 5px 3px purple;
+         }
+         .field{
+            margin-top:10px;
+            padding: 10px;
+            border-radius: 5px;
+         }
+         .field:focus{
+             outline:none;
+            border: 2px solid crimson;
+            box-shadow: 0px 0px 5px 3px rgb(134, 86, 96);
+         }
+        .field:hover{
+             box-shadow: 0px 0px 5px 3px rgb(93, 93, 180);
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo classes: hover. link . visited -->
+    <button class="btn">Hover over</button>
+    <!-- link with pseudo classses -->
+      <a href="index.html">home</a> 
+       <a href="about.html">services</a> 
+       <a href="lecture1.html">first lec</a>
+       <!--  -->
+       <div class="box">
+             <p>hey this is a box on which you hover it will create a shadow</p>
+       </div>
+       /* <!-- input feild --> */
+      <input type="text" class="input-field" placeholder="enter name">
+       <input type="text" class="field" placeholder="enter email">
+
+     
+
+
+
+
+</body>
+</html>
