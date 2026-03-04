@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectore and  css flex</title>
+    <style>
+        /* universal slector */
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+        /* element selector */
+      
+        h1{
+            text-align: center;
+        }
+        /* descendent selector */
+        .box p{
+            font-weight:bold;
+        }
+/* class selector */
+        .textbox{
+            font-weight:italic;
+        }
+        /* group slector */
+        h1,p{
+            text-decoration: underline;;
+        }
+        /* child selector */
+       .box >p{
+        color:black;
+       }
+       /* attribut slector */
+       input[type='text']{
+        padding:5px;
+        border-color: brown;
+        margin:10px;
+       }
+       a[href*='google']{
+        text-decoration: dashed;
+        color:cornflowerblue;
+       }
+       a[href^='https']{
+        color:blueviolet;
+        font-weight: bold;
+       }
+       img[src$='.png']{
+        width:100px;
+       }
+       /* flex */
+       .container{
+        border:2px solid plum;
+        display:flex;
+        /* justify-content: center; */
+        justify-content: space-evenly;
+        /* justify-content: flex-end; */
+        flex-direction:column;
+        justify-content: center; /* Centers items vertically (along the main axis) */
+        align-items: center;     /*Centers items horizontally (along the cross axis) */
+        height: 100vh;  
+         /*gap is used tpo space between items  */
+        gap: 5px;    
+       }
+       .container div{
+        background-color: blueviolet;
+        width:100px;
+        height:100px;
+       }
+    </style>
+</head>
+<body>
+    <h1>this is the first heading</h1>
+    <div class="textbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque nemo repudiandae commodi labore ea consequuntur totam earum, architecto deserunt. Nesciunt necessitatibus, tempora sit nihil ut eaque expedita quia ipsam delectus eveniet porro voluptatem inventore voluptate nam aperiam ducimus dicta?</p>
+          <div class="box">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis animi obcaecati nisi modi unde exercitationem necessitatibus repudiandae minima quo odio praesentium cupiditate neque asperiores maxime, reprehenderit deserunt qui explicabo aliquid?</p> </div>
+          </div>
+   </div>
+   <input type="email " placeholder="email"><br>
+   <input type="text" placeholder="text"><br>
+    <a href="www.google.com">Google</a><br>
+    <a href="https//.www.wikipedia.org">Wikipedia</a><br>
+    <a href="www.facebook.com">Facebook</a>
+      <!-- css flex is an elemnent that is used to make layout -->
+       <!-- <flex is one dimensional -->
+        <!-- flex is bydefault horizontal -->
+       <!-- flex container -->
+        <div class="container">
+            <!-- flex items  -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+</body>
+</html>

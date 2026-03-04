@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           padding: 0px;
+           margin:0px;
+           box-sizing: border-box;
+        }
+        .absolute{
+            border: 2px solid red;
+            position: relative;
+            width: 700px;
+        }
+        .absolute div{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            display: inline-block;
+        }
+        .absolute .box2{
+            background-color: purple;
+            position: absolute;
+            top: 100px;
+            right: 0px;
+        }
+
+        /* relative */
+        .relative{
+            margin-top: 20px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .relative div{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(0, 21, 255);
+            display: inline-block;
+        }
+        .relative .box1{
+            position: relative;
+            background-color: darkgoldenrod;
+            z-index: 3;
+
+        }
+        .relative .box2{
+            background-color: brown;
+            position: relative;
+            top: 100px;
+            right: 200px;
+            z-index: 2;
+            /* jis ka z-index sab sy ziyada hoga wo overlap hoga  */
+        }
+        .relative .box3{
+            position: relative;
+            right: 400px;
+            bottom: 50px;
+        }
+
+        .heading{
+            position: absolute;
+            /* top: 100px; */
+            /* top: 0px; */
+        }
+
+        /* fixed */
+        .fixed{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            position: fixed;
+            bottom: 0px;
+            left: 300px;
+            color: white;
+        }
+        /* nav */
+        .navbar{
+            background-color: black;
+            color:white;
+            padding:10px 15px;
+            /* position:fixed; */
+            position:sticky;
+            top:0;
+            width:100%;
+            z-index:10;
+
+        }
+        .navbar h1{
+            display:inline-block;
+        }
+        .navbar nav{
+            display:inline-block;
+            margin-left: 50px;
+
+        }
+        nav a{
+            text-decoration: none;
+            color:white;
+            margin: 0px, 10px;
+            margin-right:10px;
+        }
+        nav a:hover{
+            /* color:blueviolet; */
+            background-color:crimson ;
+            border-radius: 10px;
+            padding:5px;
+           
+        }
+        .topbar{
+            background-color:rgba(244, 10, 57, 0.763) ;
+            color: white;
+            padding: 10px;
+             text-align:center;
+            border: 2px solid plum;
+        }
+
+        .btn{
+            float: right;
+            background-color:rgba(244, 10, 57, 0.763);
+            color:bisque;
+            text-decoration: none;
+            padding:10px 12px;
+            display:inline-block;
+            border-radius: 5px;
+        }
+        main{
+            margin-top: 70px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            This is a top bar
+        </div>
+    </header>  
+
+        <!-- header is not scroll able point to be noted -->
+    <!-- nav -->
+  <div class="navbar">
+    <h1>Welcome to Webpage</h1>
+  
+    <nav>
+     <a href="#">Home</a>
+     <a href="#">contact</a>
+     <a href="#">About</a>
+    </nav>
+
+    <a href="" class="btn">get in touch</a>
+  </div>
+    
+    <main>
+
+    <!-- position absolute -->
+
+    <div class="absolute">
+        <h1>Absolute Position</h1>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <!-- position fixed -->
+    <div class="relative">
+        <h1>Relative Position</h1>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <h1 class="heading">Another element with position relative</h1>
+
+    <!-- position fixed  -->
+    <div class="fixed">
+        this is fixed
+    </div>
+<!-- similarity in fixes and absolute that it will came out of your normal flow -->
+  </main>
+</body>
+</html>
