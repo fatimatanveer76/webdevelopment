@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+         *{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+            }
+
+
+.wrapper{
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 'hdr hdr hdr hdr hdr'
+    'sidebar main main main aside'
+    'ftr ftr ftr ftr ftr';
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 60px auto 50px;
+    gap: 5px;
+}
+
+.header{
+    background-color:blue;
+    border-radius: 5px; 
+    grid-area: hdr;
+}
+.sidebar{
+    background-color: green;
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.main .child{
+    background-color: green;
+    border-radius: 5px; 
+    grid-column: 1 / span 3;
+}
+.main .box{
+    background-color:blue;
+    border-radius: 5px; 
+}
+.aside{
+    background-color: green;
+    grid-area: aside;
+    border-radius: 5px; 
+}
+.footer{
+    background-color:green;
+    grid-area: ftr;
+    border-radius: 5px; 
+}
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">
+            <div class="child">
+            <div class="box">child</div>
+            <div class="box">child</div>
+            <div class="box">Child</div>
+        </main>
+
+        <aside class="aside">
+            aside
+        </aside>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>

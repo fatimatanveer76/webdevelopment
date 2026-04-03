@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Task 1: Grid Container Setup */
+.grid-container {
+    display: grid; /* [cite: 7] */
+    height: 400px; /* [cite: 8] */
+    border: 2px solid #333; /* Bonus: for visualization [cite: 32] */
+
+    /* Task 2: Define Grid Structure */
+    /* 3 columns: 100px, 200px, 100px [cite: 10] */
+    grid-template-columns: 100px 200px 100px; 
+    /* 2 rows: 100px each [cite: 11] */
+    grid-template-rows: repeat(2, 100px); /* Bonus: using repeat() [cite: 30] */
+
+    /* Task 4: Align the Grid */
+    justify-content: center; /* Center horizontally [cite: 18] */
+    align-content: center;   /* Center vertically [cite: 19] */
+    gap: 15px;               /* Spacing between cells [cite: 20] */
+}
+
+/* Task 5: Style the Items */
+.items {
+    background-color: #3498db; /* [cite: 22] */
+    padding: 20px;             /* [cite: 23] */
+    color: white;
+    border-radius: 4px;        /* Visual separation [cite: 24] */
+    display: flex;             /* Optional: center text inside items */
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* Task 6: Grid Item Positioning */
+.item-1 {
+    grid-column-start: 2; /* Start from column 2 [cite: 26] */
+    grid-row: span 2;     /* Span across two rows [cite: 27] */
+    background-color: #e74c3c; /* Different color to observe shift  */
+}
+</style>
+</head>
+<body>
+    <section class="grid-section">
+    <div class="grid-container">
+        <div class="items item-1">Item 1</div>
+        <div class="items">Item 2</div>
+        <div class="items">Item 3</div>
+        <div class="items">Item 4</div>
+        <div class="items">Item 5</div>
+        <div class="items">Item 6</div>
+    </div>
+</section>
+    
+</body>
+</html>

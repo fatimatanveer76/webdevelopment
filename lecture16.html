@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* hex code, rgb */
+    --primary-color: rgb(239, 125, 25);
+}
+.navbar{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 7px 0px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    background-color: rgb(55, 20, 227);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+.btn:hover{
+    background-color: brown;
+}
+
+/* main section */
+.content{
+    border: 2px solid red;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    align-content: center;
+    flex-flow: row nowrap;
+    gap: 5px 5px;
+}
+.content div{
+    background-color: cadetblue;
+    padding: 10px;
+    /* width: 30%; */
+    /* flex-basis: 300px; */
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+.item1{
+    /* align-self: flex-end; */
+    /* flex-grow: 1; */
+    flex-shrink: 3;
+}
+.item3{
+    /* align-self: flex-start; */
+    /* flex-grow: 2; */
+}
+
+/* image with text */
+.img-with-txt{
+    background-color: rgb(133, 185, 231);
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 400px; */
+}
+
+.txt-box, .img-box{width: 45%;}
+
+.img-box img{width: 100%;}
+
+/* .txt-box{order: 2}
+.img-box{order: 1} */
+
+/* services */
+.services{
+    padding: 10px 5px;
+}
+.service-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.services h1, .services p{
+    margin: 10px 0px;
+}
+.service-cards .card{
+    background-color: gainsboro;
+    padding: 15px 10px;
+    border: 2px solid rgba(228, 99, 24, 0.801);
+    text-align: center;
+}
+
+/* CSS Grid */
+.grid-section{
+    background-color: coral;
+    height: 500px;
+    padding: 20px 10px;
+}
+.grid-container{
+    display: grid;
+    height: 400px;
+    grid-template-columns: 200px 300px 400px;
+    /* grid-template-columns: 100px repeat(2, 1fr); */
+    /* grid-template-areas: 'item1 item1 item1' 
+    'item2 item3 item4'
+    'item5 item3 item6'; */
+    
+    grid-template-rows: 100px 100px ;
+    /* aligns the grid horizontaly inside its container */
+    justify-content: center;
+    /* aligns the items horizontaly inside the cell */
+    /* justify-items: center; */
+    /* aligns the grid verticaly inside its container  */
+    align-content: center;
+    /* aligns the items verticaly inside the cell */
+    /* align-items: start; */
+    gap: 5px 7px;
+}
+.grid-container .items{
+    background-color: cadetblue;
+    padding: 10px;
+}
+.item1{
+    /* grid-column: 2 / 3;
+    grid-row: 1 / 3; */
+    /* grid-area: item1; */
+}
+/* .item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+.item6{grid-area: item6;} */
+
+
+/* Media Queries */
+@media(max-width:768px){
+    .grid-section{background-color: blueviolet;}
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-areas: 'item1 item1'
+        'item2 item3'
+        'item4 item4'
+        'item5 item6'; */
+    }
+    .img-with-txt{flex-direction: column;}
+    .img-box{order: 1}
+    .txt-box{order: 2;}
+}
+</head>
+<body>
+
+
+    l
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        /* we usually dont give height for row direction */
+        height:300px;
+        color:plum;
+        border:2px solid black;
+        display:flex;
+        justify-content: center;
+        /* flex-direction: column; */
+        align-items: center;
+        flex-wrap:wrap;
+        align-content:center;
+        gap:10px ;
+        /* flex lfow is  property is used to set direcions and set wheter it is multiline or sinlge line */
+        flex-flow: row nowrap;
+      }
+      .container .box{
+        background-color: black;
+        /* child property */
+        /* flex basis for item size based on the main axis */
+        /* flex-basis:300px; */
+        /* flex-grow: 1; */
+      }
+      .item1{
+        /* align-self:flex-start; */
+        flex-grow:15;
+      }
+     .item4{
+      /* align-self: flex-end; */
+      flex-grow: 2;
+
+     }
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <div class="box item1">loe jiej kki</div>
+        <div class="box item2">loe jiej kki</div>
+        <div class="box item3">loe jiej kki</div>
+        <div class="box item4">loe jiej kki</div>
+        <!-- <div class="box">loe jiej kki</div> -->
+        <!-- <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+         <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        <div class="box">loe jiej kki</div>
+        -->
+    </main>
+</body>
+</html>

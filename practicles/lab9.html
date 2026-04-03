@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.container{
+    background-color:#1a1a2e;
+    width:100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0px 35px;
+}
+
+.nav-title{
+    color:white;
+    font-size:24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-title span{
+    color:#f5a623;
+}
+/* gap only work in parent tag */
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:28px;
+}
+.nav-links a{
+    color:#878f99;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links a:hover{
+    color:#f5a623;
+}
+
+
+.btn{
+    background-color:#f5a623;
+    padding:10px;
+    border-radius: 10px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/* hero section */
+
+.hero{
+    
+    background-color:#27273d;
+    height:260px;
+    padding:20px;
+    
+}
+/* if we give margin to first element then margin will collapse  */
+.hero h2{
+    text-align: left;
+    /* padding:20px; */
+    color:#878f99;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:18px;
+    letter-spacing: 2px;
+    
+}
+
+.hero-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    gap:32px;
+    padding:12px 10px;
+    flex-basis:200px;
+    flex-grow:1;
+}
+
+.box{
+    background-color: #2d2d3f;
+    padding:20px;
+    width:220px;
+    border-top:2px solid #f5a623;
+    border-radius:8px;
+    
+}
+
+.box h3{
+    color:#fff;
+    margin-bottom: 10px;
+
+}
+
+.box p{
+    color:#878f99;
+    font-size:14px;
+}
+.emoji{
+    /* padding:2px; */
+    margin-bottom: 7px;
+     /* font-size: 50px; */
+}
+/* our story*/
+
+.our-story{
+    display: flex;
+    justify-content: space-between;
+    gap:28px;
+    padding:30px;
+    margin-top:45px;
+}
+
+.txt-box h4{
+    color:#f5a623;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.txt-box h1{
+    margin-bottom: 18px;
+    
+}
+
+.txt-box p{
+    color:#9e9e9e;
+    margin-bottom:30px;
+    max-width: 450px;
+    letter-spacing: 1px
+}
+
+.txt-box .button{
+    padding:12px 20px;
+    border:none;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 6px;
+    transition:0.3s ease-in;
+}
+
+.txt-box .button:hover{
+    background-color: #f5a623;
+    color:black;
+}
+
+.img-box img{
+    width:100%;
+    border-radius:10px;
+    height:300px;
+}
+
+/* reviews*/
+
+.review{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5a623;
+    padding:20px 40px;
+    margin-top:30px;
+}
+
+.review-card{
+    margin-top:10px;
+    text-transform: uppercase;
+    color:#2d2d3f;
+    font-size:14px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.review-card h1{
+    color:black;
+    margin-bottom:8px;
+    /* border-right: 1px solid grey; */
+
+}
+.review-card{
+     border-right: 1px solid grey;
+     padding:0px 80px;
+}
+.review-card:last-child{
+    border:none;
+    
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a2e;
+    padding:20px 40px;
+
+}
+
+.footer-mid{
+    color:#878f99
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap:29px;
+}
+
+
+.footer-links a{
+    text-decoration: none;
+    color:#878f99;
+}
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+     <header class="container">
+        <div class="nav-title">Trek<span>North</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a href="#" class="btn">Book a Trip</a>
+     </header>
+
+     <!-- hero section -->
+
+    
+<section class="hero">
+    <h2>Why Choose Us</h2>
+
+    <div class="hero-boxes">
+
+        <div class="box">
+            <div class="emoji">⛰️</div>
+            <h3>Expert Guides</h3>
+            <p>Our certified mountain guides have over a decade of experience.</p>
+        </div>
+
+        <div class="box">
+            <div>🗺️</div>
+            <h3>Custom Routes</h3>
+            <p>Every trip is tailored to your skill level and interest.</p>
+        </div>
+
+        <div class="box">
+            <div class="emoji">🏕️</div>
+            <h3>Premium Gear</h3>
+            <p>Top-of-the-line equipment provided for your adventure.</p>
+        </div>
+
+        <div class="box">
+            <div class="emoji">📡</div>
+            <h3>24/7 Support</h3>
+            <p>Satellite communication and emergency support throughout.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Story section -->
+
+
+<section class="our-story">
+    <div class="txt-box">
+        <h4 class="sub-heading">Our story</h4>
+        <h1>Adventure Starts Where The Roads End.</h1>
+        <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste saepe sunt maxime perspiciatis inventore modi porro iusto ct amet consectetur adipisicing elit. Enim, esse optio. Exercitationem non totam at cumque sit neque molestiae sequi nisi suscipit quis, pariatur quidem sapiente, tenetur voluptates, recusandae tempore!</p>
+        <button class="button">Discover More</button>  
+    </div>
+
+    <div class="img-box">
+        <img src="https://img.freepik.com/free-photo/beautiful-shot-snowy-mountain-sunset_181624-37878.jpg?semt=ais_hybrid&w=740&q=80" alt="img"></div>
+    
+    </div>
+</section>
+
+<!-- Status Section -->
+
+<section class="review">
+
+    <div class="review-card">
+        <h1>120+</h1>
+        <p>Destinations</p>
+    </div>
+
+    <div class="review-card">
+        <h1>8,400</h1>
+        <p>Happy Travellers</p>
+    </div>
+
+    <div class="review-card">
+        <h1>14</h1>
+        <p>Years Active</p>
+    </div>
+
+    <div class="review-card">
+        <h1>98%</h1>
+        <p>Satisfaction Rate</p>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+
+
+<footer class="footer">
+     <div class="nav-title">Trek<span>North</span></div>
+     <div class="footer-mid">
+        <p> @2026 Trek North. All right reserved</p>
+     </div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>  
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+</footer>
+
+</body>
+</html>
