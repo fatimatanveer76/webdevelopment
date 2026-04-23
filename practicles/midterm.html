@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex; flex-direction: column; align-items: center; padding: 20px;
+        }
+        label {
+            font-size: 1.2em;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            color: #27ae60;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+            max-width: 600px;
+        }
+      
+       .hero{
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+       }
+       .card{
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+       }
+         .card p{
+          font-size: 0.9em;
+          color:  #27ae60;
+          margin-top: 10px;
+         }
+         .card:hover{
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+         }
+         .strip{
+            display:flex;
+              justify-content: space-between;
+              gap: 20px;    
+                align-items: center;
+            background-color: #27ae60; 
+            color: white; 
+            text-align: center; 
+            padding: 20px;
+         }
+         .button{
+            background-color: #fff; 
+            color: #27ae60; 
+            border: none;
+            border-radius: 12px;
+            padding: 10px 20px; 
+            font-size: 1em; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+         }
+         .button:hover{
+            background-color: #27ae60; 
+            color: #fff;
+         }
+         /* media queries */
+            @media (max-width: 768px) {
+                .hero {
+                    grid-template-columns: 1fr;
+                }
+                .strip {
+                    flex-direction: column;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    <!-- header section with heading and para using flex column -->
+    <header style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+        <label for="label">"OUR ADVANTAGES"</label>
+        <h1>WHT THOUSAND CHOOSE GREEN LEAF</h1>
+        <!-- DESCRIBE COMPANY -->
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo praesentium quidem </P>
+    </header>
+    <!-- hero section make cards using grid without inline styling-->
+        <section class="hero">
+            <div class="card">Eco-Friendly Products
+                <p>All products are sustainably sourced and
+                 environmentally certified</p>
+            </div>
+            <div class="card">Sustainable Solutions
+                <p>Our dedicated support team is available
+                whenever you need help</p>
+            </div>
+            <div class="card">Organic Options
+                <p>We guarantee next-day delivery to over 50 cities
+                  nationwide.
+                </p>
+            </div>
+            <div class="card">Recyclable Packaging
+                <p>Over ten thousand happy customers have rated
+                    us 5 stars.</p>
+            </div>
+            <div class="card">Carbon Neutral
+                <p>Premium quality products at prices that won't
+                  break your budget.
+               </p>
+            </div>
+            <div class="card">Eco-Conscious Community
+                <p>Hassle-free 30-day return policy — no questions
+                 asked.</p>
+            </div>
+        </section>
+        <section class="strip">
+        <!-- CTA strip using flexbox -->
+            <h2>"Ready to experience the GreenLeaf difference?"</h2>
+            <button class="button">Get Started Today</button>
+        </section>
+    </body>
